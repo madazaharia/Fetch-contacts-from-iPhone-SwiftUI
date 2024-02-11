@@ -28,6 +28,8 @@ struct ContactCell: View {
                     Text(contact.givenName)
                         .fontWeight(.semibold)
                     + Text(" " + contact.familyName)
+                    
+                    Spacer()
                 }
             } else {
                 HStack {
@@ -36,6 +38,8 @@ struct ContactCell: View {
                     
                     Text(contact.organizationName)
                         .fontWeight(.bold)
+                    
+                    Spacer()
                 }
             }
         }
